@@ -1,0 +1,22 @@
+{
+  "lista": [
+    {
+      "produto": "Bolo de Fubá",
+      "quantidade": "ovo",
+      "receita": "fazer o bolo",
+      "id": 1
+    },
+    {
+      "produto": "Bolo de Cenoura",
+      "quantidade": "ovo",
+      "receita": "fazer o bolo",
+      "id": 2
+    },
+    {
+      "produto": "Carne",
+      "quantidade": "2",
+      "receita": "222222",
+      "id": 3
+    }
+  ]
+}

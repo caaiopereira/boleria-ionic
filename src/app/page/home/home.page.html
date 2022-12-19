@@ -1,0 +1,57 @@
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark" mode="ios">
+    <ion-title>
+      Boleria
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-img [src]="image"></ion-img>  
+  
+    <ion-list >      
+      <ion-item-sliding  *ngFor="let produto of listaProdutos">
+
+      <ion-item>
+        <!--Bolinha Branca-->
+        <ion-icon name="list" *ngIf="!produto.status"></ion-icon>
+        <ion-label *ngIf="!produto.status"><strong> {{produto.produto}} </strong></ion-label>
+        <ion-icon name="return-up-back" *ngIf="!produto.status"></ion-icon>
+
+
+        <!--Bolinha Verde-->
+        <ion-icon  color="success" *ngIf="produto.status"></ion-icon>
+        <ion-label *ngIf="produto.status"><del><strong>Receita:</strong> {{produto.produto}} </del></ion-label>
+        <ion-label *ngIf="produto.status"><del><strong>Quant:</strong> {{produto.quantidade}}</del></ion-label>
+      </ion-item>
+
+      <ion-item-options >
+        
+        <ion-item-option color="primary" [routerLink]="['/info',produto.id]">
+          <ion-icon name="information-circle-outline"></ion-icon>
+        </ion-item-option>
+        
+        <ion-item-option color="success" [routerLink]="['/form',produto.id]">
+        <ion-icon name="refresh-outline"></ion-icon>
+         </ion-item-option>
+
+        <ion-item-option  color="danger" (click)="deletar(produto.id)">
+          <ion-icon name="trash-outline"></ion-icon>          
+        </ion-item-option>
+        
+       
+
+      </ion-item-options>
+
+      </ion-item-sliding>
+
+    </ion-list>
+  
+    <!--Botão Flutuante-->
+    <ion-fab horizontal="end" vertical="bottom">
+      <ion-fab-button (click)="alertando()">
+        <ion-icon name="add-outline"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    
+</ion-content>
