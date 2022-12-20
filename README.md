@@ -1,4 +1,4 @@
-# Resolução das atividades
+# Projeto
 	    A Boleria deseja desenvolver um Aplicativo onde disponibilizará as receitas desenvolvidas
       pela sua equipe de confeiteiros e ao mesmo tempo permitir que seus clientes também
       publiquem suas próprias receitas. Você foi contratado para desenvolver o APP.
