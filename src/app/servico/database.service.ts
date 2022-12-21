@@ -11,7 +11,7 @@ export class DatabaseService {
     headers: new HttpHeaders({'Content-Type' : 'application/json'})
   }
 
-  readonly API = "http://localhost:3000/lista/";
+  readonly API = "https://boleria-json.vercel.app/lista/";
 
   constructor(private http: HttpClient) { }
 
