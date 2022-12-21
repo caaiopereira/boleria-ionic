@@ -10,29 +10,29 @@
 </ion-header>
 
 <ion-content>
-  <ion-img [src]="image"></ion-img>  
+  <ion-img [src]="produto.imagem"></ion-img>  
   
   <form #form="ngForm" (ngSubmit)="update(form)">
 
-    <ion-item>
-      <ion-label>Item:</ion-label>
-      <ion-input type="text" name="produto" [ngModel]="produto.produto"></ion-input>
-    </ion-item>
+    <ion-card>
+      <h6><ion-label><strong>Item:</strong></ion-label>
+      <ion-input type="text" name="produto" [ngModel]="produto.produto"></ion-input></h6>
+    </ion-card>
 
-    <ion-item>
-      <ion-label>Ingredientes:</ion-label>
-      <ion-input type="text" name="quantidade" [ngModel]="produto.quantidade"></ion-input>
-    </ion-item>
+    <ion-card>
+      <h6><ion-label><strong>Ingredientes:</strong></ion-label>
+      <ion-textarea rows="4" type="text" name="quantidade" [ngModel]="produto.quantidade"></ion-textarea></h6>
+    </ion-card>
 
-    <ion-item>
-      <ion-label>Receita:</ion-label>
-      <ion-input type="text" name="receita" [ngModel]="produto.receita"></ion-input>
-    </ion-item>
+        <ion-card>
+        <h6><ion-label><strong>Receita:</strong></ion-label>
+      <ion-textarea rows="5" type="text" name="receita" [ngModel]="produto.receita"></ion-textarea></h6>
+    </ion-card>
 
-    <ion-item>
-      <ion-label>Imagem:</ion-label>
-      <ion-input type="text" name="imagem" [ngModel]="produto.imagem"></ion-input>
-    </ion-item>
+      <ion-card>
+        <h6><ion-label><strong>Imagem:</strong></ion-label>
+      <ion-input type="text" name="imagem" [ngModel]="produto.imagem"></ion-input></h6>
+      </ion-card>
 
     <ion-button type="submit" color="success" expand="block">Atualizar</ion-button>
   </form>
