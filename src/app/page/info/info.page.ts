@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { DatabaseService } from 'src/app/servico/database.service';
 import { UtilityService } from 'src/app/servico/utility.service';
@@ -9,7 +9,8 @@ import { UtilityService } from 'src/app/servico/utility.service';
   styleUrls: ['./info.page.scss'],
 })
 export class InfoPage implements OnInit {
-  image = "https://cdn.pixabay.com/photo/2015/02/23/20/53/tomatoes-646645_960_720.jpg";
+
+
   routeId = null;
   produto: any = {};
 

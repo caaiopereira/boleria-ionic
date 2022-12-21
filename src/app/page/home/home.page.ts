@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Form } from '@angular/forms';
 import { ActionSheetController, AlertController } from '@ionic/angular';
 
 import { Produtos } from 'src/app/model/produto.model';
@@ -11,8 +12,9 @@ import { UtilityService } from 'src/app/servico/utility.service';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit {
+  
 
-  image = "https://cdn.pixabay.com/photo/2015/02/23/20/53/tomatoes-646645_960_720.jpg";
+  image = "https://cdn.pixabay.com/photo/2021/02/06/19/31/pancakes-5989144_960_720.jpg";
 
   listaProdutos: Produtos[] = [];
 
@@ -37,22 +39,27 @@ export class HomePage implements OnInit {
   async alertando(){
     const alert = this.alertCtrl.create({
       mode:'ios',
-      header: 'Cadastro de Produtos',
+      header: 'Cadastro de Bolos',
       inputs:[
         {
           name: 'item',
           type: 'text',
-          placeholder: 'Informe o Produto'
+          placeholder: 'Informe o Item'
         },
         {
           name:'qtd',
           type: 'text',
-          placeholder: 'Informe a Quantidade'
+          placeholder: 'Informe os Ingredientes'
         },
         {
           name:'rct',
           type: 'text',
-          placeholder: 'Informe a receita'
+          placeholder: 'Informe a Receita'
+        },
+        {
+          name:'img',
+          type: 'text',
+          placeholder: 'URL da Imagem'
         }
       ],
       buttons: [
@@ -75,6 +82,7 @@ export class HomePage implements OnInit {
               produto: form.item,
               quantidade: form.qtd,
               receita: form.rct,
+              imagem: form.img,
 
               //Vai ser a variavel de controle do ngIf
               status: false

@@ -13,13 +13,13 @@
       <ion-item-sliding  *ngFor="let produto of listaProdutos">
 
       <ion-item>
-        <!--Bolinha Branca-->
+      
         <ion-icon name="list" *ngIf="!produto.status"></ion-icon>
         <ion-label *ngIf="!produto.status"><strong> {{produto.produto}} </strong></ion-label>
         <ion-icon name="return-up-back" *ngIf="!produto.status"></ion-icon>
 
 
-        <!--Bolinha Verde-->
+      
         <ion-icon  color="success" *ngIf="produto.status"></ion-icon>
         <ion-label *ngIf="produto.status"><del><strong>Receita:</strong> {{produto.produto}} </del></ion-label>
         <ion-label *ngIf="produto.status"><del><strong>Quant:</strong> {{produto.quantidade}}</del></ion-label>

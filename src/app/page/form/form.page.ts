@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Produtos } from 'src/app/model/produto.model';
 
@@ -12,7 +12,8 @@ import { UtilityService } from 'src/app/servico/utility.service';
 })
 export class FormPage implements OnInit {
 
-  image = "https://cdn.pixabay.com/photo/2015/02/23/20/53/tomatoes-646645_960_720.jpg";
+
+  image = "https://receitinhas.com.br/wp-content/uploads/2022/09/bolo-de-cenoura-vegano.jpg";
   routeId = null;
   produto: any = {};
 
@@ -37,7 +38,7 @@ export class FormPage implements OnInit {
   update(form: any){
     this.banco.updateItem(form.value, this.routeId);
     this.router.navigate(['']);
-    this.util.toastando("Item Atualizado com sucesso", "middle", 2000, "medium");
+    this.util.toastando("Item Atualizado com sucesso", "middle", 900, "medium");
   }
 
 }

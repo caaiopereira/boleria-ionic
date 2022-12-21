@@ -3,5 +3,6 @@ export interface Produtos{
     produto: string,
     quantidade: string,
     status: boolean,
-    receita: string
+    receita: string,
+    imagem: string
 }

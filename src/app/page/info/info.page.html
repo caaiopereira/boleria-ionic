@@ -4,28 +4,29 @@
       <ion-back-button></ion-back-button>
     </ion-buttons>
     <ion-title>
-        Info
+        Informações
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <ion-img [src]="image"></ion-img>  
+<ion-content> 
   
-  <form #form="ngForm" (ngSubmit)="update(form)">
-
     <ion-item>
-      <ion-label name="produto" [ngModel]="produto.produto">Item: {{produto.produto}}</ion-label>
-    </ion-item>
-
-    <ion-item>
-      <ion-label name="quantidade" [ngModel]="produto.quantidade">Ingredientes: {{produto.quantidade}}</ion-label>
-    </ion-item>
-
-    <ion-item>
-      <ion-label name="quantidade" [ngModel]="produto.receita">Receita: {{produto.receita}}</ion-label>
+      <ion-img  [src]="produto.imagem"></ion-img>    
     </ion-item>
     
-  </form>
+    <ion-item>
+      <ion-label>Item: {{produto.produto}}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label >Ingredientes: {{produto.quantidade}}</ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Receita: {{produto.receita}}</ion-label>
+    </ion-item>
+    
+ 
 
 </ion-content>

@@ -4,7 +4,7 @@
       <ion-back-button></ion-back-button>
     </ion-buttons>
     <ion-title>
-      
+      Atualizar
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -20,13 +20,18 @@
     </ion-item>
 
     <ion-item>
-      <ion-label>Quantidade:</ion-label>
+      <ion-label>Ingredientes:</ion-label>
       <ion-input type="text" name="quantidade" [ngModel]="produto.quantidade"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label>Receita:</ion-label>
       <ion-input type="text" name="receita" [ngModel]="produto.receita"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-label>Imagem:</ion-label>
+      <ion-input type="text" name="imagem" [ngModel]="produto.imagem"></ion-input>
     </ion-item>
 
     <ion-button type="submit" color="success" expand="block">Atualizar</ion-button>
