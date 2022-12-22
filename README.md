@@ -3,6 +3,8 @@
       pela sua equipe de confeiteiros e ao mesmo tempo permitir que seus clientes também
       publiquem suas próprias receitas. Você foi contratado para desenvolver o APP.
       
+      OBS: Visualizar Projeto em modo Mobile!
+      
       => Requisitos do Aplicativo Boleria:
       
       • Possui uma lista com as receitas.
