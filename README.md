@@ -23,7 +23,7 @@
       o AlertController
       o ToastControlle
       o ActionSheetController
-      o Etc.
+      o Etc
 		
       
 # Anotações/Comandos
