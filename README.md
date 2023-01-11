@@ -35,7 +35,7 @@
 			-> npm install -g @ionic/cli
 
 		Criação do projeto Ionic: 
-			-> ionic start nom_projeto modelo
+			-> ionic start nome_projeto modelo
 
 		Modelos básico do Ionic: 
 			-> Blank
